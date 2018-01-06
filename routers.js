@@ -14,7 +14,7 @@ module.exports = function (app) {
   app.route('/:url(api|auth|components|app|bower_components|assets)/*')
     .get(errors[404])
 
-  // 前端页面渲染路由
+  // 前端页面渲染路由//
   app.route('/perview/:id').get(require('./render/preview'))
 
   // 其他资源路由
